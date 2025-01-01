@@ -1,0 +1,174 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#bg {
+    background-image: url('../media/StudentIndustrial.png');
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Adjust the background size to cover the element */
+    position: relative;
+    left: 50px;
+    top: 100px;
+    width: 90%; /* Increase or decrease the width value as needed */
+    height: 75%; /* Increase or decrease the height value as needed */
+    border: 4px solid #040404;
+    box-shadow: 10px rgba(245, 67, 3, 0.3);
+  }
+  
+  #bg   {
+    border: 5px solid #0a0a0afb;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(211, 16, 16, 0.938);
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  #bg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+body {
+    min-height: 100%;
+background: linear-gradient(to bottom right, orange, red);
+border: 3px solid #040404; 
+
+}
+main {
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 200px;
+    margin-bottom: 3px;
+    padding-right: 20px;
+    border: 2px solid #040404; 
+    background: linear-gradient(to bottom right, #c970c9, #1bebeb);
+
+  }
+
+  h1 {
+    font-family: 24px;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+     background: linear-gradient(to bottom right, yellow, Green);
+     border: 4px solid #040404; 
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+}
+.logo .menu-icon {
+    color: #333;
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+.logo .logo-name {
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+}
+nav .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    padding: 20px 0;
+    background-color: #fff;
+    background: linear-gradient(to bottom right, yellow, Green);
+    transition: all 0.4s ease;
+    border: 4px solid #040404; 
+
+}
+nav.open .sidebar {
+    left: 0;
+}
+.sidebar .sidebar-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+}
+.sidebar-content .list {
+    list-style: none;
+}
+.list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.lists .nav-link:hover {
+    background-color: #4070f4;
+}
+.nav-link .icon {
+    margin-right: 14px;
+    font-size: 20px;
+    color: #707070;
+}
+.nav-link .link {
+    font-size: 16px;
+    color: #707070;
+    font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+    color: #fff;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+    opacity: 1;
+    left: 260px;
+    pointer-events: auto;
+}
+
+a.main {
+text-decoration: none;
+ font-family: arial;
+  color: #14396A !important;
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #2ABBF9;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 2px solid #3866A3;
+  background: #63B8EE;
+}
+
+a.main:hover{
+color: #14396A !important;
+  background: #FFFFFF;
+  background: linear-gradient(to top, #FFFFFF, #FFFFFF);
+}

@@ -1,0 +1,139 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    border: 4px solid #040404; 
+    background: linear-gradient(to bottom right, Lavender, gold);
+
+  }
+  #bg {
+    background-image: url('../media/Coordinator.png');
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Adjust the background size to cover the element */
+    position: fixed;
+    left: 40px;
+    top:100px;
+    width: 90%; /* Increase or decrease the width value as needed */
+    height: 75%; /* Increase or decrease the height value as needed */
+    border: 4px solid #040404;
+    box-shadow: 10px rgba(245, 67, 3, 0.3);
+  }
+  
+  #bg   {
+    border: 5px solid #0a0a0afb;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(211, 16, 16, 0.938);
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  #bg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+main {
+  text-align: center;
+  margin-top: 3px;
+  margin-left: 200px;
+  margin-bottom: 3px;
+  padding-right: 20px;
+  border: 2px solid #040404; 
+  background: linear-gradient(to bottom right, #c970c9, #1bebeb);
+
+}
+
+h1 {
+  font-family: 24px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 20px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  background: linear-gradient(to bottom right, Lavender, blue);
+  border: 3px solid #040404; 
+
+}
+
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: #fff;
+  background: linear-gradient(to bottom right, Lavender, blue);
+  transition: all 0.4s ease;
+  border: 3px solid #040404; 
+
+}
+.lists .nav-link:hover {
+  background-color: #a6e915;
+}
+.btn-5 {
+  width: 160px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+
+.btn-5:hover {
+  color: #f0094a;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}

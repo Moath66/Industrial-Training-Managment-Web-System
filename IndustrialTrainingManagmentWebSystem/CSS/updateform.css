@@ -1,0 +1,180 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    border: 2px solid #040404; 
+    background: linear-gradient(to bottom right, #c970c9, #1bebeb);
+
+  }
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    position:relative; right: 200;
+    /* justify-content: flex-end; */
+    margin: auto;
+    margin-top: 200px;
+    margin-left: 530px;
+    border: 4px solid #000000;
+    background-color: rgb(111, 209, 111);
+    margin-bottom: 20px;
+}
+
+
+
+.title {
+    font-size: 28px;
+    color: royalblue;
+    
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before, .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    color: royalblue;
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border: 4px solid #000000;
+}
+
+.form label .input+span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span, .form label .input:valid+span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid+span {
+    color: green;
+}
+
+.submit {
+margin-bottom: 20PX;
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    cursor: pointer;
+    width: 350px; /* Add this line to set a fixed width for the buttons */
+    margin-right: 10px; /* Add this line to add some space between the buttons */
+}
+.submit1{
+    margin-bottom: 20PX;
+    border: none;
+    outline: none;
+    background-color: rgb(225, 172, 65);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    transform: .3s ease;
+    cursor: pointer;
+    width: 300px; /* Add this line to set a fixed width for the buttons */
+    margin-right: 10px; /* Add this line to add some space between the buttons */
+
+}
+
+.submit1:hover {
+    background-color: rgb(56, 90, 194);
+}
+.submit:hover {
+    background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+
+#togglePassword {
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    bottom: 34%;
+    display: felx;
+    color: rgba(0, 0, 0, 0.476);
+}
