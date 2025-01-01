@@ -20,7 +20,6 @@ The **Industrial Training Management System** simplifies the administration of i
 - **JavaScript**: Implements dynamic behavior on the client-side, such as form validation, data submission, and user interaction.
 - **HTML**: Provides the basic structure for the user interface, ensuring all elements are correctly displayed.
 
-## Installation Instructions
 
 ### Prerequisites
 - **PHP**: Version 7.0 or later.
@@ -28,7 +27,4 @@ The **Industrial Training Management System** simplifies the administration of i
 - **Web Server**: Apache or Nginx (XAMPP or WAMP recommended for local development).
 - **IDE**: Any PHP IDE or text editor (e.g., Visual Studio Code, Sublime Text).
 
-### Setting Up the Project
-1. Clone or download the repository:
-   ```bash
-   git clone https://github.com/yourusername/industrial-training-management-system.git
+
